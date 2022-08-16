@@ -1,2 +1,14 @@
 @import 'utils/variables';
 @import 'components/type';
+
+
+:root{
+ --couleur--fond : #003734;
+ --couleur--txt: white;
+
+}
+
+
+.proj{
+    background-color: var(--couleur--fond);
+}
