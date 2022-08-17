@@ -16,13 +16,30 @@ body{
 .title{
     color: var(--couleur--txt);
 }
+
+.title--big{
+    font-size: 67.34px;
+    text-align: center;
+}
+
+.title--nrm{
+    font-size: 37.9px;
+}
+
 .link{
     color: var(--couleur--txt);
+    font-size: 21.33px;
 }
+
 .menu{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.bloc1{
+    height: 100vh;
+
 }
 
 
@@ -30,6 +47,4 @@ body{
     background-color: var(--couleur--fondproj);
     margin-left: 3%;
     margin-right: 3%;
-    padding-top: 3%;
-    padding-bottom: 3%;
 }
