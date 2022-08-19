@@ -4,38 +4,45 @@
 
 
 :root{
-    --couleur--fond : #003734;
+    --couleur--fond : #057872;
     --couleur--txt: white;
-    --couleur--fondproj : black;
-    --couleur--hover: #BC02B5;
+    --couleur--fondproj : #003734;
+    --couleur--txtproj :black;
+    --couleur--block1: #003734;
+    --couleur--hover : #6DFFF7;
 }
 
 @media(prefers-color-scheme: light){
     :root {
-        --couleur--fond : #5DDCD5;
+        --couleur--fond : #E9F3F3;
         --couleur--txt: black;
-        --couleur--fondproj : white;
-        --couleur--hover : #FE665C;
+        --couleur--fondproj : #5DDCD5;
+        --couleur--txtproj :white;
+        --couleur--block1: #5DDCD5;
     }
 }
 
 
 [data-theme="dark"] {
-    --couleur--fond : #003734;
+    --couleur--fond : #057872;
     --couleur--txt: white;
-    --couleur--fondproj : black;
-    --couleur--hover: #BC02B5;
+    --couleur--fondproj : #003734;
+    --couleur--txtproj :black;
+    --couleur--block1: #003734;
+    --couleur--hover : #6DFFF7;
 }
 
 [data-theme="light"]{
-    --couleur--fond : #5DDCD5;
+    --couleur--fond : #E9F3F3;
     --couleur--txt: black;
-    --couleur--fondproj : white;
-    --couleur--hover : #FE665C;
+    --couleur--fondproj : #5DDCD5;
+    --couleur--txtproj :white;
+    --couleur--block1: #5DDCD5;
 }
 
 body{
     background-color: var(--couleur--fond);
+    margin: 0px;
 }
 .title,.text{
     color: var(--couleur--txt);
@@ -73,6 +80,7 @@ main{
 
 .bloc1{
     height: 100vh;
+    background-color: var(--couleur--fondproj);
 
 }
 
@@ -94,6 +102,7 @@ main{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    font-size: 18px;
 }
 
 .img{
@@ -101,4 +110,17 @@ main{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.svg--insta{
+    stroke: var(--couleur--txt);
+}
+
+.svg--email{
+    fill: var(--couleur--txt);
+}
+
+.svg--cv{
+    fill: var(--couleur--txt);
+    stroke: var(--couleur--txt);
 }
