@@ -10,6 +10,7 @@
     --couleur--txtproj :black;
     --couleur--block1: #003734;
     --couleur--hover : #6DFFF7;
+    --couleur--koro : #E9F3F3;
 }
 
 @media(prefers-color-scheme: light){
@@ -19,6 +20,7 @@
         --couleur--fondproj : #5DDCD5;
         --couleur--txtproj :white;
         --couleur--block1: #5DDCD5;
+        --couleur--koro : #057872;
     }
 }
 
@@ -30,9 +32,11 @@
     --couleur--txtproj :black;
     --couleur--block1: #003734;
     --couleur--hover : #6DFFF7;
+    --couleur--koro : #E9F3F3;
 }
 
 [data-theme="light"]{
+    --couleur--koro : #057872;
     --couleur--fond : #E9F3F3;
     --couleur--txt: black;
     --couleur--fondproj : #5DDCD5;
@@ -130,3 +134,11 @@ main{
     right: 3%;
     bottom: 2%;
 }
+
+.cercle--svg{
+    fill :var(--couleur--koro);
+}
+.tete--svg{
+    fill : var(--couleur--block1)
+}
+
