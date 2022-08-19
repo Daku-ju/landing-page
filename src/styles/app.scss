@@ -81,7 +81,7 @@ main{
 .bloc1{
     height: 100vh;
     background-color: var(--couleur--fondproj);
-
+    position: relative;
 }
 
 
@@ -123,4 +123,10 @@ main{
 .svg--cv{
     fill: var(--couleur--txt);
     stroke: var(--couleur--txt);
+}
+
+.btn--theme{
+    position: absolute;
+    right: 3%;
+    bottom: 2%;
 }
