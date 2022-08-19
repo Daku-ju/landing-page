@@ -9,3 +9,7 @@ li{
 a{
     text-decoration: none;
 }
+button{
+    border-style: none;
+    background-color: transparent;
+}
