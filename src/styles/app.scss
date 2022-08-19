@@ -47,15 +47,22 @@
 body{
     background-color: var(--couleur--fond);
     margin: 0px;
+    font-family: 'Hind', sans-serif;
+    font-weight: 500;
 }
 .title,.text{
     color: var(--couleur--txt);
 }
 
+.title{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+}
+
 .title--big{
     font-size: 67.34px;
     text-align: center;
-    padding-top: 50%;
+    padding-top: 62%;
 }
 
 .title--nrm{
