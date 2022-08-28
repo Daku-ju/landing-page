@@ -185,4 +185,31 @@ main{
         bottom:15%;
         right: 10%;
     }
+    .proj--data{
+        position: relative;
+    }
+    
+    .proj__img--data1:hover ::before{
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../assets/images/coeur.svg);
+        width: 43px;
+        height: 37px;
+        top:15%;
+        left: 10%;
+    }
+    
+    .proj__img--data2:hover ::after{
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../assets/images/coeur.svg);
+        width: 43px;
+        height: 37px;
+        bottom:15%;
+        right: 10%;
+    }
 }
