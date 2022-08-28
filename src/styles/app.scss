@@ -151,31 +151,38 @@ main{
     fill : var(--couleur--block1)
 }
 
-.proj--tfa{
-    position: relative;
-}
 
-.proj__img--tfa1:hover ::before{
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../assets/images/chien.svg);
-    width: 31px;
-    height: 30.44px;
-    top:15%;
-    left: 10%;
-}
 
-.proj__img--tfa2:hover ::after{
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../assets/images/chien.svg);
-    width: 31px;
-    height: 30.44px;
-    bottom:15%;
-    right: 10%;
+@media (min-width:800px){
+    main{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .proj--tfa{
+        position: relative;
+    }
+    
+    .proj__img--tfa1:hover ::before{
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../assets/images/chien.svg);
+        width: 31px;
+        height: 30.44px;
+        top:15%;
+        left: 10%;
+    }
+    
+    .proj__img--tfa2:hover ::after{
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../assets/images/chien.svg);
+        width: 31px;
+        height: 30.44px;
+        bottom:15%;
+        right: 10%;
+    }
 }
-
