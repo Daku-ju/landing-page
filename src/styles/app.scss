@@ -158,6 +158,21 @@ main{
         margin-left: 100px;
         margin-right: 100px;
     }
+
+    .title--big{
+        font-size: 67.34px;
+        text-align: center;
+        padding-top: 15%;
+    }
+    
+
+    .section__acc{
+        display: flex;
+    }
+    .text{
+        max-width: 600px;
+    }
+
     .proj--tfa{
         position: relative;
     }
