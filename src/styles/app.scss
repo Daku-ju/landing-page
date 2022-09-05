@@ -135,7 +135,7 @@ main{
 
 .svg--cv{
     fill: var(--couleur--txt);
-    stroke: var(--couleur--txt);
+
 }
 
 .btn--theme{
@@ -149,6 +149,19 @@ main{
 }
 .tete--svg{
     fill : var(--couleur--block1)
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo--txt{
+    font-size: 21.33px;
+    padding-left: 10px;
+    color: var(--couleur--txt);
 }
 
 
