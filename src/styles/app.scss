@@ -9,7 +9,7 @@
     --couleur--fondproj : #003734;
     --couleur--txtproj :black;
     --couleur--block1: #003734;
-    --couleur--hover : #6DFFF7;
+    --couleur--hover : #88B69A;
     --couleur--koro : #E9F3F3;
 }
 
@@ -21,6 +21,7 @@
         --couleur--txtproj :white;
         --couleur--block1: #5DDCD5;
         --couleur--koro : #057872;
+        --couleur--hover : #00A2FD;
     }
 }
 
@@ -31,11 +32,12 @@
     --couleur--fondproj : #003734;
     --couleur--txtproj :black;
     --couleur--block1: #003734;
-    --couleur--hover : #6DFFF7;
+    --couleur--hover : #88B69A;
     --couleur--koro : #E9F3F3;
 }
 
 [data-theme="light"]{
+    --couleur--hover : #00A2FD;
     --couleur--koro : #057872;
     --couleur--fond : #E9F3F3;
     --couleur--txt: black;
@@ -166,6 +168,17 @@ main{
     color: var(--couleur--txt);
 }
 
+//hover
+.link:hover{
+    color: var(--couleur--hover);
+    text-decoration : underline;  
+}
+.reseau--li:hover {
+    background-color: var(--couleur--hover);
+}
+
+
+
 
 
 @media (min-width:800px){
@@ -198,8 +211,8 @@ main{
         background-repeat: no-repeat;
         background-size: contain;
         background-image: url(../assets/images/chien.svg);
-        width: 31px;
-        height: 30.44px;
+        width: 40px;
+        height: 39.27px;
         top:15%;
         left: 10%;
     }
@@ -210,8 +223,8 @@ main{
         background-repeat: no-repeat;
         background-size: contain;
         background-image: url(../assets/images/chien.svg);
-        width: 31px;
-        height: 30.44px;
+        width: 40px;
+        height: 39.27px;
         bottom:15%;
         right: 10%;
     }
@@ -298,4 +311,54 @@ main{
         bottom:15%;
         right: 10%;
     }
+
+    .proj--rux{
+        position: relative;
+    }
+
+    .proj__img--rux1:hover ::before{
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../assets/images/rux.svg);
+        width: 40px;
+        height: 40px;
+        top:15%;
+        left: 10%;
+    }
+    
+    .proj__img--rux2:hover ::after{
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../assets/images/rux.svg);
+        width: 40px;
+        height: 40px;
+        bottom:15%;
+        right: 10%;
+    }
+
+    .reseau{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:1200px){
+    main{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .title--nrm{
+        margin-top: 80px;
+    }
+
 }
