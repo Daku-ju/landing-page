@@ -79,6 +79,7 @@ main{
 .section__acc{
     background-color: var(--couleur--block1);
     padding: 25px;
+    padding-top: 100px;
 }
 
 .section__proj{
@@ -94,8 +95,8 @@ main{
 .proj{
     background-color: var(--couleur--fondproj);
     padding: 5%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 50px;
     text-align: center;
 
@@ -168,21 +169,53 @@ main{
     background-color: var(--couleur--hover);
     border-radius: 5px;
 }
+.footer{
+    color: var(--couleur--txt);
+    text-align: center;
+}
 
 
+@media (min-width:700px){
+    .section__acc{
+        padding: 50px;
+        padding-top: 200px;
+    }
+    
+    .section__proj{
+        padding: 50px;
+    }
+    
+    .section__cont{
+        padding: 50px;
+    }
+}
 
 
+@media (min-width:930px){
 
-@media (min-width:800px){
-    main{
-        margin-left: 100px;
-        margin-right: 100px;
+    .section__acc{
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .section__proj{
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .section__cont{
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
-    .title--big{
-        font-size: 67.34px;
-        text-align: center;
-        padding-top: 15%;
+    .title--nrm{
+        padding-bottom: 50px;
     }
     
 
@@ -191,9 +224,16 @@ main{
     }
     .acc__block--txt{
         display: flex;
+        flex-direction: column;
+        padding-left: 20px;
     }
     .text{
         max-width: 600px;
+    }
+
+    .proj{
+        margin-top: 50px;
+        margin-bottom: 50px; 
     }
 
     .proj--tfa{
@@ -353,12 +393,26 @@ main{
 }
 
 @media (min-width:1200px){
-    main{
-        margin-left: 200px;
-        margin-right: 200px;
+
+    .section__acc{
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
-    .title--nrm{
-        margin-top: 80px;
+    
+    .section__proj{
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .section__cont{
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
 }
