@@ -13,38 +13,7 @@
     --couleur--koro : #E9F3F3;
 }
 
-@media(prefers-color-scheme: light){
-    :root {
-        --couleur--fond : #E9F3F3;
-        --couleur--txt: black;
-        --couleur--fondproj : #5DDCD5;
-        --couleur--txtproj :white;
-        --couleur--block1: #5DDCD5;
-        --couleur--koro : #057872;
-        --couleur--hover : #00A2FD;
-    }
-}
 
-
-[data-theme="dark"] {
-    --couleur--fond : #057872;
-    --couleur--txt: white;
-    --couleur--fondproj : #003734;
-    --couleur--txtproj :black;
-    --couleur--block1: #003734;
-    --couleur--hover : #88B69A;
-    --couleur--koro : #E9F3F3;
-}
-
-[data-theme="light"]{
-    --couleur--hover : #00A2FD;
-    --couleur--koro : #057872;
-    --couleur--fond : #E9F3F3;
-    --couleur--txt: black;
-    --couleur--fondproj : #5DDCD5;
-    --couleur--txtproj :white;
-    --couleur--block1: #5DDCD5;
-}
 
 body{
     background-color: var(--couleur--fond);
@@ -64,11 +33,17 @@ body{
 .title--big{
     font-size: 67.34px;
     text-align: center;
-    padding-top: 62%;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 .title--nrm{
     font-size: 37.9px;
+    margin: 0px;
+    padding-bottom: 20px;
+
 }
 
 .title--ptt{
@@ -80,6 +55,7 @@ body{
     font-size: 21.33px;
     font-family: 'Heebo', sans-serif;
     font-weight: 600;
+    padding: 10px;
 
 }
 
@@ -87,18 +63,31 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 main{
-    margin-left: 25px;
-    margin-right: 25px;
+
+    position: relative;
 }
 
 .bloc1{
-    height: 100vh;
     background-color: var(--couleur--fondproj);
-    position: relative;
+}
+
+.section__acc{
+    background-color: var(--couleur--block1);
+    padding: 25px;
+}
+
+.section__proj{
+    padding: 25px;
+}
+
+.section__cont{
+    background-color: var(--couleur--block1);
+    padding: 25px;
 }
 
 
@@ -120,6 +109,7 @@ main{
     margin-left: auto;
     margin-right: auto;
     font-size: 18px;
+    margin: 0px;
 }
 
 .img{
@@ -145,7 +135,8 @@ main{
 .btn--theme{
     position: absolute;
     right: 3%;
-    bottom: 2%;
+    top: 8%;
+    z-index: 2;
 }
 
 .cercle--svg{
@@ -175,6 +166,7 @@ main{
 }
 .reseau--li:hover {
     background-color: var(--couleur--hover);
+    border-radius: 5px;
 }
 
 
@@ -194,7 +186,10 @@ main{
     }
     
 
-    .section__acc{
+    .acc__block{
+        display: flex;
+    }
+    .acc__block--txt{
         display: flex;
     }
     .text{
@@ -349,6 +344,11 @@ main{
     .logo{
         display: flex;
         flex-direction: column;
+    }
+    .logo--txt{
+        padding-left: 5px;
+        padding-right: 5px;
+
     }
 }
 
