@@ -79,7 +79,6 @@ main{
 .section__acc{
     background-color: var(--couleur--block1);
     padding: 25px;
-    padding-top: 100px;
 }
 
 .section__proj{
@@ -178,7 +177,6 @@ main{
 @media (min-width:700px){
     .section__acc{
         padding: 50px;
-        padding-top: 200px;
     }
     
     .section__proj{
