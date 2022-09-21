@@ -7,16 +7,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 if(window.matchMedia('(min-width:930px)').matches){
 
-    gsap.from (".reseau",{
-        x : -700,
-        duration: 0.5, 
-        ease: "power 4",
-        scrollTrigger:{ 
-           trigger: ".proj--hello",
-           start: "bottom center",       
-       }
-    })
-
     gsap.from (".img",{
         rotation: -30,
         x : -300,
