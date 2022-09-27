@@ -12,10 +12,44 @@
 
 body{
     background-color: var(--couleur--fond);
+    padding-left: 25px;
+    padding-right: 25px;
+    color: var(--couleur--text);
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .link{
     color: var(--couleur--text);
+    padding: 10px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.titre--grand{
+    font-size: 48px;
+    margin: 0%;
+}
+
+.titre--normal{
+    font-size: 39px;
+    margin: 0%;
+}
+
+.acceuil{
+    display:block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bloc1{
+    height: 100vh;
+}
+.img{
+    max-width: 100%;
 }
 
 .img__proj{
