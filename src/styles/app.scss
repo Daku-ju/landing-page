@@ -10,7 +10,14 @@
 
 }
 
+body{
+    background-color: var(--couleur--fond);
+}
+
 .link{
     color: var(--couleur--text);
 }
 
+.img__proj{
+    display: none;
+}
